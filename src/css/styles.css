@@ -4,9 +4,9 @@
   padding: 1px;
 }
 header{
-  font-size: 100px;
+  font-size: 80px;
   font-family: Helvetica;
-  margin: 100px 0px 0px 200px;
+  margin: 60px 0px 0px 200px;
   color: #135A11;
 }
 
@@ -18,21 +18,21 @@ body {
    background-image: url("../images/Stellainpasture2.jpg");
    background-repeat: no-repeat;
    background-size: 100%;
-   font-size: 26px;
+   font-size: 16px;
 }
 
  /*This is my header color*/
 div#topbar{
 	background:linear-gradient(#14CAB4, #7DF553);
-	height:125px;
+	height:90px;
 }
 /*This is header text to the right*/
 div#topbar > #logo{
 	float:right;
-	width:1000px;
+	width:500px;
 	height:35px;
 	margin:20px 40px 0px 20px;
-	font-size:36px;
+	font-size:16px;
 	color:#999;
 
 }
@@ -41,35 +41,35 @@ div#topbar > #sections_panel > div{
 	background:#333;
 	padding:10px;
 	height:200px;
-	margin:10px;
+	margin:px;
 	color:#FC0;
 }
 
 img {
     border: 3px solid #ddd;
-    border-radius: 20px;
-    padding: 3px;
-    width: 200px;
-    margin: -40px 0px 0px 125px;
+    border-radius: 10px;
+    padding: 1px;
+    width: 150px;
+    margin: -55px -80px 0px 135px;
 }
 
 h1 {
 	font-family: 'Helvetica';
 	font-size: 60px;
-	padding-top: 10px;
-	margin: 20px 0px 0px 50px;
+	padding-top: 5px;
+	margin: 0px 0px 0px 50px;
 	color: #135A11;
 }
 h2 {
   font-size: 20px;
   color: #135A11;
-  margin: 10px 0px 0px 25px;
+  margin: 10px -5px 10px 29px;
 }
 
 h5 {
   font-size: 20px;
   padding-top: 10px;
-  margin: -30px 30px 0px 160px;
+  margin: -30px 30px 0px 120px;
   /*top bottom left right*/
   color: #135A11;
  }
@@ -123,11 +123,13 @@ h5 {
 .show {display: block;}
 
 /*This is the flex container on my projects page*/
-.flex-container > div {
+.flex-container> div  {
   background-color: #87E1F0;
-  margin: 5px;
-  padding: 5px;
-  margin: 0px 850px 5px 10px;
+  margin: 1px;
+  margin-right: 50%;
+  max-width: 55vw;
+  padding: 1px;
+  margin: 0px 0px 5px 5px;
        /*drops the bottom - right - padding between grids - left*/
 }
 /*This aligns my text*/
@@ -135,9 +137,9 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-}
 
 /*I need this for my footer*/
+}
 
 html, 
 .wrapper { 
@@ -146,7 +148,7 @@ html,
 }
 .footer,
 .push {
-  height: 75px;
+  height: 5px;
 
 
 }
