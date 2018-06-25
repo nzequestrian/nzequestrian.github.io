@@ -1,5 +1,25 @@
-// Delete a card when the 'x' button is click
-// Display navigation when menu button is clicked
-// Make a new card with the 'New Card' form
-// Add 'active' class to navigation elements when they are clicked
-// Remove 'active' class from other navigation elements when one is clicked
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+// I AM CONFUSED WITH WHERE THIS SHOULD BE IF I REMOVE
+// IT FROM THE HTML PAGES THE NAV DOSENT WORK???????
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

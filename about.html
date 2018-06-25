@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/css/styles.css">
+ 	<title>Joannes Portfolio</title>
+
+ <body
+ 	<div class="wrapper">
+    <div id="topbar">
+    <div id="logo"> “A great horse will change your life. <br>The truly special ones define it…” <em>~ Author Unknown</em></div>
+    
+ 
+
+    <h1>Biography</h1>
+
+
+</div>
+
+</head>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Navigation</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="Projects.html">Projects</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<article>
+<img src="./src/images/joanne-final.jpg">
+<h3>Kia Ora! Welcome to my about me page.</h3> 
+<pre>I am an apprentice software developer at WeCanCodeIt in Columbus, Ohio.
+Before this I played with ponies and cut grass and ran around the 
+yard playing with butterflies in lala land.
+
+Please contact me if you are a fairy godmother. 
+Email: joanne@bridleplates.com
+</pre>
+</article>
+<br>
+<img src="./src/images/Junior.jpg"><img src="./src/images/Sunny.jpg">
+</body><img src="./src/images/JuJu.jpg">
+<br><br><br>
+<footer>
+       <div>&copy;2018 bridleplates.com  -  <em>May the horse be with you</em></div> 
+    </footer>
+</html>

@@ -1,139 +1,156 @@
-* {
+* 
+{
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  padding: 1px;
 }
-:root {
-	--blue: #39add1;
-}
-html {
-	font-family: sans-serif;
-}
-ul {
-	list-style-type: none;
+header{
+  font-size: 100px;
+  font-family: Helvetica;
+  margin: 100px 0px 0px 200px;
+  color: #135A11;
 }
 
-.card,
-.new-card {
-	border: 1px solid var(--blue);
-	border-radius: 1rem;
-	display: grid;
-	flex-basis: calc(33% - 2rem);
-	grid-template-columns: 8fr 2fr;
-	margin: 1rem;
-	padding: 1rem;
+
+/*This is my background, margin & padding is for info inside background*/
+body {
+   margin: 20px;
+   padding: 10px;
+   background-image: url("../images/Stellainpasture2.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   font-size: 26px;
 }
-.card > footer,
-.card > header {
-	grid-column: 1/-1;
+
+ /*This is my header color*/
+div#topbar{
+	background:linear-gradient(#14CAB4, #7DF553);
+	height:125px;
 }
-.card > header {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
+/*This is header text to the right*/
+div#topbar > #logo{
+	float:right;
+	width:1000px;
+	height:35px;
+	margin:20px 40px 0px 20px;
+	font-size:36px;
+	color:#999;
+
 }
-.card > header button {
-	align-self: flex-start;
-	border: none;
-	cursor: pointer;
-	font-size: 2rem;
-	line-height: 0;
-	transform: rotateZ(45deg);
+/*This keeps all my shit from running of the screen*/
+div#topbar > #sections_panel > div{
+	background:#333;
+	padding:10px;
+	height:200px;
+	margin:10px;
+	color:#FC0;
 }
-.card > header button:focus {
-	outline: none;
+
+img {
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    padding: 3px;
+    width: 200px;
+    margin: -40px 0px 0px 125px;
 }
-.card > main p {
-	margin: 1rem 0;
+
+h1 {
+	font-family: 'Helvetica';
+	font-size: 60px;
+	padding-top: 10px;
+	margin: 20px 0px 0px 50px;
+	color: #135A11;
 }
-.cards {
-	display: flex;
-	flex-wrap: wrap;
+h2 {
+  font-size: 20px;
+  color: #135A11;
+  margin: 10px 0px 0px 25px;
 }
-.container {
-	display: grid;
-	grid-template-columns: 0.7fr 0.3fr;
-	grid-template-rows: 100px auto 200px;
-	min-height: 100vh;
+
+h5 {
+  font-size: 20px;
+  padding-top: 10px;
+  margin: -30px 30px 0px 160px;
+  /*top bottom left right*/
+  color: #135A11;
+ }
+ h6 {
+  font-size: 14px;
+  padding-top: 10px;
+  margin: -48px 20px 0px 450px;
+  /*top bottom left right*/
+  color: #135A11;
 }
-.container > aside {
-	display: flex;
-	grid-column: -2/-1;
-	margin: 1rem;
+
+/*This is my cool dropdown button*/
+.dropbtn {
+    background-color: #1F921A ;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
-.container > footer,
-.container > header {
-	grid-column: 1/-1;
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #A5ECE4;
+    color: #1F921A;
 }
-.container > footer {
-	align-items: center;
-	border-top: 1px solid var(--blue);
-	display: flex;
-	justify-content: center;
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
-.container > header {
-	align-items: center;
-	border-bottom: 1px solid var(--blue);
-	display: flex;
-	justify-content: space-between;
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E4FFFC;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.container > header h1 {
-	margin-left: 1rem;
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
-.container > header nav {
-	margin-right: 1rem;
-	position: relative;
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/*This is the flex container on my projects page*/
+.flex-container > div {
+  background-color: #87E1F0;
+  margin: 5px;
+  padding: 5px;
+  margin: 0px 850px 5px 10px;
+       /*drops the bottom - right - padding between grids - left*/
 }
-.container > header nav ul {
-	background-color: white;
-	display: none;
-	left: -47px;
-	position: absolute;
+/*This aligns my text*/
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
-.container > header nav ul li {
-	margin-top: 1rem;
+
+/*I need this for my footer*/
+
+html, 
+.wrapper { 
+  margin-bottom: 1px;
+  
 }
-.container > header nav ul li a {
-	color: var(--blue);
-	padding: 0.5rem 1rem;
-	text-decoration: none;
+.footer,
+.push {
+  height: 75px;
+
+
 }
-.container > header nav ul li.active a {
-	background-color: var(--blue);
-	color: white;
-}
-.container > header nav ul li:first-child {
-	margin-left: 0;
-}
-.container > main {
-	grid-column: 1/2;
-}
-.nav-menu {
-	border: none;
-	color: var(--blue);
-	cursor: pointer;
-	padding: 0.5em;
-}
-.new-card * {
-	margin-bottom: 1rem;
-}
-.new-card input,
-.new-card textarea {
-	border: 1px solid var(--blue);
-	display: block;
-	padding: 0.25rem;
-	width: 100%;
-}
-.new-card form {
-	grid-column: 1 / -1;
-}
-.news-feed-card {
-	border: 1px solid var(--blue);
-	border-radius: 1rem;
-	margin: 1rem 0;
-	padding: 1rem;
-}
-.news-feed-card:first-child {
-	border: 1px solid var(--blue);
-	margin-top: 0;
+article {
+  margin: 20px -5px 20px 20px;
+  font-size: 20px;
 }

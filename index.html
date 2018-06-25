@@ -1,162 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jasmine Testing Exercise</title>
+    <title>Joannes Portfolio</title>
     <link rel="stylesheet" href="./src/css/styles.css">
-</head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Jasmine Testing Exercise</h1>
-            <nav>
-                <button class="nav-menu">MENU</button>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="active"><a href="#">Portfolio</a></li>
-                    <li><a href="#">Bio</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="cards">
-                <section class="new-card">
-                    <form>
-                        <h2>New Card</h2>
-                        <label>Title: <input type="text"></label>
-                        <label>Content:</label>
-                        <textarea cols="30" rows="10"></textarea>
-                        <input type="submit">
-                    </form>
-                </section>
-                <section class="card">
-                    <header>
-                        <h2>Card Title</h2>
-                        <button>+</button>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam reprehenderit adipisci tempore facilis a et laboriosam esse id suscipit architecto reiciendis qui eos repellendus dicta, non. Aut, dolorem, placeat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam atque voluptate blanditiis facere, dolor ducimus illum voluptatum unde velit laborum, soluta fugit quae nostrum molestias natus neque molestiae corrupti.</p>
-                    </main>
-                    <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </aside>
-                    <footer>
-                        <a href="#">Read More...</a>
-                    </footer>
-                </section>
-                <section class="card">
-                    <header>
-                        <h2>Card Title</h2>
-                        <button>+</button>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam reprehenderit adipisci tempore facilis a et laboriosam esse id suscipit architecto reiciendis qui eos repellendus dicta, non. Aut, dolorem, placeat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam atque voluptate blanditiis facere, dolor ducimus illum voluptatum unde velit laborum, soluta fugit quae nostrum molestias natus neque molestiae corrupti.</p>
-                    </main>
-                    <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </aside>
-                    <footer>
-                        <a href="#">Read More...</a>
-                    </footer>
-                </section>
-                <section class="card">
-                    <header>
-                        <h2>Card Title</h2>
-                        <button>+</button>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam reprehenderit adipisci tempore facilis a et laboriosam esse id suscipit architecto reiciendis qui eos repellendus dicta, non. Aut, dolorem, placeat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam atque voluptate blanditiis facere, dolor ducimus illum voluptatum unde velit laborum, soluta fugit quae nostrum molestias natus neque molestiae corrupti.</p>
-                    </main>
-                    <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </aside>
-                    <footer>
-                        <a href="#">Read More...</a>
-                    </footer>
-                </section>
-                <section class="card">
-                    <header>
-                        <h2>Card Title</h2>
-                        <button>+</button>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam reprehenderit adipisci tempore facilis a et laboriosam esse id suscipit architecto reiciendis qui eos repellendus dicta, non. Aut, dolorem, placeat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam atque voluptate blanditiis facere, dolor ducimus illum voluptatum unde velit laborum, soluta fugit quae nostrum molestias natus neque molestiae corrupti.</p>
-                    </main>
-                    <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </aside>
-                    <footer>
-                        <a href="#">Read More...</a>
-                    </footer>
-                </section>
-                <section class="card">
-                    <header>
-                        <h2>Card Title</h2>
-                        <button>+</button>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam reprehenderit adipisci tempore facilis a et laboriosam esse id suscipit architecto reiciendis qui eos repellendus dicta, non. Aut, dolorem, placeat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam atque voluptate blanditiis facere, dolor ducimus illum voluptatum unde velit laborum, soluta fugit quae nostrum molestias natus neque molestiae corrupti.</p>
-                    </main>
-                    <aside>
-                        <h3>Social Media Links</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
-                    </aside>
-                    <footer>
-                        <a href="#">Read More...</a>
-                    </footer>
-                </section>
-            </section>
-        </main>
-        <aside>
-            <section class="news-feed">
-                <section class="news-feed-card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat, expedita sint qui, consectetur nemo sequi porro, quas deleniti tenetur repudiandae eos magni incidunt harum quam quia suscipit itaque id!</p>
-                </section>
-                <section class="news-feed-card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat, expedita sint qui, consectetur nemo sequi porro, quas deleniti tenetur repudiandae eos magni incidunt harum quam quia suscipit itaque id!</p>
-                </section>
-                <section class="news-feed-card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat, expedita sint qui, consectetur nemo sequi porro, quas deleniti tenetur repudiandae eos magni incidunt harum quam quia suscipit itaque id!</p>
-                </section>
-            </section>
-        </aside>
-        <footer>
-            <small>&copy;2018</small>
-        </footer>
-    </div><!-- /.container -->
-    <script src="./src/js/app.js"></script>
+
+<div class="wrapper">
+    <div id="topbar">
+    <div id="logo">"One who believes that he has mastered the art of
+horsemanship has not yet begun to understand the horse." <em>~ Author Unknown</em></div>    <h1>Joanne Kelly</h1>
+    <header> Kia Ora! </header>
+
+</div>
+
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Navigation</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="Projects.html">Projects</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+
+    <div class="row">
+    <div class="col-md-4">
+    <br>
+    <br>
+    
+
+<br> Please visit the links from the navigation menu to view my <br>most recent projects 
+    and to learn more about me! </p>
+
+   
+   
+    <p>Visit the links below to get in touch with me on social media!</p>
+   <br>
+    <div class="col-md-8">
+    <div class="row"><div class="contact-button">
+    <a class="btn btn-default btn-lg btn-block" href="https://www.facebook.com/joanne.kelly.1656"><i class="facebook"></i> Facebook</a>
+</div>
+
+    <div class="contact-button">
+    <a class="btn btn-default btn-lg btn-block" href="https://github.com/nzequestrian">
+    <i class="github" target="_blank"></i> GitHub</a>
+</div>
+
+    <div class="contact-button">
+    <a class="btn btn-default btn-lg btn-block" href="https://www.linkedin.com/in/joanne-kelly-0335a666/" target="_blank"><i class="linkedin"></i> LinkedIn</a>
+</div>
+
+    <div class="contact-button">
+    <a class="btn btn-default btn-lg btn-block" href="https://twitter.com/joanne67871313/" target="_blank"><i class="twitter"></i> Twitter</a>
+</div>
+
+</section>
+  <script src="./src/js/app.js"></script>
 </body>
+
+<div class="push"></div>
+              
+    <footer class="footer"></footer>
+  <!-- Tried to wrap the footer into the class but the footer ran off the page. So it stays like this -->
+<footer>
+        <div>&copy;2018 bridleplates.com  -  joanne@bridleplates.com</div> 
+</footer>
+
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>My Projects</title>
+  
+
+<div class="wrapper">
+    <div id="topbar">
+    <div id="logo">" Technology is anything that wasn’t around when you were born." <em>~  Alan Kay </em></div>
+<h1>My Projects</h1> <h6>-  Click the images below to go to projects</h6> </div>
+
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Navigation</button>
+       <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="Projects.html">Projects</a>
+       </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content - should this be here? */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<body>
+
+<div>
+      <a href="https://github.com/nzequestrian/virtual-pet" target="_blank"><img src="./src/images/VirtualPet.jpg" alt="Virtual Pet"></a>
+      <a href="https://github.com/nzequestrian/virtual-pet-shelter" target="_blank">
+      <img src="./src/images/VirtualPetShelter.jpg" alt="Virtual Pet"></a>
+      <a href="https://github.com/nzequestrian/virtual-pets-amok" target="_blank"><img src="./src/images/VirtualPetsAmok.jpg" alt="Virtual Pet"></a>
+<h5><pre>Virtual Pet               Virtual Pet Shelter            Virtual Pets Amok</pre></h5>
+</div>
+
+<div class="flex-container">
+      <div><h2>Virtual Pet - <em>Command Line (UI)- Java - Junit - OOP</em></h2><article>My Virtual Pet application allows a user to create and take care of their own pet. Your pet can be fed, watered, and played with, as you nurture your pet you will grow a strong bond with him..</article></div>
+      <div><h2>Virtual Pet Shelter - <em>Maps - Overloaded Constructors </em></h2><article>So, you have some experience under your belt in the care and feeding of a virtual pet. It’s time to share that with the community! Time to volunteer!</article></div>
+      <div><h2>Virtual Pets Amok - <em>Getters - Polymorphism - Inheritance </em></h2><article>In additon to feeding, watering, playing with, adopting and dropping off pets. There are ways to track cage cleanliness for organic dogs, oil/maintenance level for robotic animals and to see how dirty the cats litterbox is getting. Dont forget to take the dogs on a walk once in a while.</article></div>
+</div>
+
+</body>
+    <footer>
+       <div>&copy;2018 bridleplates.com  -  <em>May the horse be with you</em></div> 
+    </footer>
+</html>
+
