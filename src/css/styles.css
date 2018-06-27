@@ -29,10 +29,10 @@ div#topbar{
 /*This is header text to the right*/
 div#topbar > #logo{
 	float:right;
-	width:500px;
+	width:320px;
 	height:35px;
-	margin:20px 40px 0px 20px;
-	font-size:16px;
+	margin:15px 40px 0px 20px;
+	font-size:18px;
 	color:#999;
 
 }
@@ -49,7 +49,7 @@ img {
     border: 3px solid #ddd;
     border-radius: 10px;
     padding: 1px;
-    width: 150px;
+    max-width: 150px;
     margin: -55px -80px 0px 135px;
 }
 
@@ -64,6 +64,12 @@ h2 {
   font-size: 20px;
   color: #135A11;
   margin: 10px -5px 10px 29px;
+}
+h3 {
+  font-size: 20px;
+  color: #135A11;
+  margin: -60px 0px 0px 350px;
+
 }
 
 h5 {
@@ -105,7 +111,7 @@ h5 {
     display: none;
     position: absolute;
     background-color: #E4FFFC;
-    min-width: 160px;
+    min-width: 125px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -124,7 +130,7 @@ h5 {
 
 /*This is the flex container on my projects page*/
 .flex-container> div  {
-  background-color: #87E1F0;
+  background-color: #C1E7FF;
   margin: 1px;
   margin-right: 50%;
   max-width: 55vw;
@@ -144,14 +150,18 @@ h5 {
 html, 
 .wrapper { 
   margin-bottom: 1px;
-  
 }
+
 .footer,
 .push {
   height: 5px;
-
-
 }
+
+footer{
+  color: white;
+  font-size: 20px;
+}
+
 article {
   margin: 20px -5px 20px 20px;
   font-size: 20px;
