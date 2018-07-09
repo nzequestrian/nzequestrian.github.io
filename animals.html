@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joannes Portfolio</title>
+    <link rel="stylesheet" href="./src/css/addOn.css">
+
+<div class="wrapper">
+        <div id="topbar">
+            <div id="logo">"One who believes that he has mastered the art of
+                horsemanship has not yet begun to understand the horse." <em>~ Author Unknown</em></div>    <h1>My Horses</h1>
+        
+</div>
+
+</head>
+
+<div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Navigation</button>
+             <div id="myDropdown" class="dropdown-content">
+                 <a href="index.html">Home</a>
+                 <a href="about.html">About Me</a>
+                 <a href="projects.html">Projects</a>
+                 <a href="animals.html">Animals</a>
+    </div>
+</div>  
+<body>
+
+    <article> 
+       <p> Junior - New Zealand Sport Horse
+        17.2hh Bay Gelding</p>
+        
+        <p>Lady - Thoroughbred
+        16.2hh Seal Brown Mare</p>
+        
+        <p>Private - Welsh Pony
+        13.2hh Bay Gelding</p>
+
+    </article>
+        <div class="carousel">
+                <input id="image1" type="radio" name="image-selector" checked="checked" />
+                <label for="image4">View image 4</label>
+                <img src="./src/images/juju-kaka-jojo.jpg">
+              
+                <input id="image2" type="radio" name="image-selector" />
+                <label for="image1">View image 1</label>
+                <img src="./src/images/Junior.jpg">
+              
+                <input id="image3" type="radio" name="image-selector" />
+                <label for="image2">View image 2</label>
+                <img src="./src/images/kaka-lady.jpg">
+              
+                <input id="image4" type="radio" name="image-selector" />
+                <label for="image3">View image 3</label>
+                <img src="./src/images/prpr-chche.jpg">
+                
+                <label for="image4">View image 4</label>
+                <label for="image1">View image 1</label>
+              </div>
+
+              <aside>
+                    <button onclick="runTests()" class="dropbtn">Alan, Click
+                        Here!</button>
+                </aside>
+
+              <script src="./src/js/modal.js"></script>
+              <script src="./lib/spec/js/animals.spec.js"></script>
+</body>
+</html>

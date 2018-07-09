@@ -18,31 +18,12 @@
        <div id="myDropdown" class="dropdown-content">
           <a href="index.html">Home</a>
           <a href="about.html">About Me</a>
-          <a href="Projects.html">Projects</a>
+          <a href="projects.html">Projects</a>
+          <a href="animals.html">Animals</a>
        </div>
 </div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content - should this be here? */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 </script>
 
 <body>
@@ -55,11 +36,19 @@ window.onclick = function(event) {
 </div>
 
 <div class="flex-container">
-      <div><h2>Virtual Pet - <em>Command Line (UI)- Java - Junit - OOP</em></h2><article>My Virtual Pet application allows a user to create and take care of their own pet. </article></div>
-      <div><h2>Virtual Pet Shelter - <em>Maps - Overloaded Constructors </em></h2><article>It’s time to share that with the community! Time to volunteer!</article></div>
-      <div><h2>Virtual Pets Amok - <em>Getters - Polymorphism - Inheritance </em></h2><article>We have robo pets too! </article></div>
+      <div><button id="vp1" class="collapsible"><h2>Virtual Pet - <em>Command Line (UI)- Java - Junit - OOP</em></h2></button><div class="content"><article>My Virtual Pet application allows a user to create and take care of their own pet. </article></div></div>
+      <div><button id="vp2" class="collapsible"><h2>Virtual Pet Shelter - <em>Maps - Overloaded Constructors </em></h2></button><div class="content"><article>It’s time to share that with the community! Time to volunteer!</article></div></div>
+      <div><button id="vp3" class="collapsible"><h2>Virtual Pets Amok - <em>Getters - Polymorphism - Inheritance </em></h2></button><div class="content"><article>We have robo pets too! </article></div></div>
 </div>
 
+    <aside>
+		<button onclick="runTests()" class="dropbtn">Alan, Click
+			Here!</button>
+	</aside>
+
+
+<script src="./src/js/app.js"></script>
+<script src="./lib/spec/js/projects.spec.js"></script>
 </body>
    
 </html>
